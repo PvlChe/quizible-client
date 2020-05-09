@@ -1,0 +1,10 @@
+<mat-card>
+  <mat-progress-bar mode="determinate" [value]="timer"></mat-progress-bar>
+  <h3>{{question.question}}</h3>
+  <ul>
+    <li (click)="postAnswer(question['answer'+randomArray[0]])">{{question['answer'+randomArray[0]]}}</li>
+    <li (click)="postAnswer(question['answer'+randomArray[1]])">{{question['answer'+randomArray[1]]}}</li>
+    <li (click)="postAnswer(question['answer'+randomArray[2]])">{{question['answer'+randomArray[2]]}}</li>
+    <li (click)="postAnswer(question['answer'+randomArray[3]])">{{question['answer'+randomArray[3]]}}</li>
+  </ul>
+</mat-card>

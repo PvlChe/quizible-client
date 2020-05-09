@@ -1,0 +1,22 @@
+
+
+.start-form {
+  background-color: #ffd740;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 0;
+}
+
+button {
+  width: 50%;
+  margin: 30px auto;
+}
+
+mat-form-field {
+  margin: auto;
+  text-align: center;
+  width: 50%;
+}
+
+

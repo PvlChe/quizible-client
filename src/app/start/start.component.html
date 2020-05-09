@@ -1,0 +1,20 @@
+
+  <div class="container">
+    <mat-card class="start-form">
+      <mat-form-field color="primary">
+        <mat-label>Age</mat-label>
+        <input [autocomplete]="false" matInput #age>
+      </mat-form-field>
+      <mat-form-field color="primary">
+        <mat-label>PLZ</mat-label>
+        <input matInput #plz>
+      </mat-form-field>
+      <mat-form-field color="primary">
+        <mat-label>Quizcode</mat-label>
+        <input matInput #quizcode>
+      </mat-form-field>
+      <button (click)="start(age.value, plz.value, quizcode.value)" mat-raised-button color="primary">Start</button>
+    </mat-card>
+  </div>
+
+
