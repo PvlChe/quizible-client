@@ -1,19 +1,27 @@
 mat-card {
   background-color: #ffd740;
-  width: 400px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   padding: 40px 0;
   text-align: center;
+  box-shadow: none !important;
+}
+
+h1 {
+  padding: 30px;
+  font-family: "Apple SD Gothic Neo";
+  font-size: 2rem;
 }
 
 ul {
   list-style: none;
   padding: 0;
   & li {
-    margin: 5px;
+    margin: 5px 65px;
+    padding: 10px 0;
     border-radius: 5px;
-    background-color: #ff6767;
+    background-color: rgba(255, 103, 103, 0.7);
     cursor: pointer;
   }
 }

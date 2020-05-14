@@ -2,7 +2,7 @@
   <div *ngFor="let answer of answers" class="result-container">
     <h3>{{answer.question.question}}</h3>
     <span>Your answer: {{answer.answer}}</span>
-    <span>Right answer: {{answer.question.answer1}}</span>
-
+    <span><b>{{answer.answer === answer.question.answer1 ? 'Right' : 'False'}}</b></span>
+    <span [hidden]="answer.answer === answer.question.answer1">Right answer: {{answer.question.answer1}}</span>
   </div>
 </div>

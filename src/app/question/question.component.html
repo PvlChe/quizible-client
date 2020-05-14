@@ -1,6 +1,6 @@
 <mat-card>
   <mat-progress-bar mode="determinate" [value]="timer"></mat-progress-bar>
-  <h3>{{question.question}}</h3>
+  <h1>{{question.question}}</h1>
   <ul>
     <li (click)="postAnswer(question['answer'+randomArray[0]])">{{question['answer'+randomArray[0]]}}</li>
     <li (click)="postAnswer(question['answer'+randomArray[1]])">{{question['answer'+randomArray[1]]}}</li>

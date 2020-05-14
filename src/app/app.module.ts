@@ -16,6 +16,7 @@ import {QuizService} from './service/quiz.service';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
 import { QuestionComponent } from './question/question.component';
 import { ResultComponent } from './result/result.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { ResultComponent } from './result/result.component';
     MatFormFieldModule,
     MatInputModule,
     MatCardModule,
+    MatDividerModule,
     MatProgressBarModule,
     MatButtonModule,
     HttpClientModule,

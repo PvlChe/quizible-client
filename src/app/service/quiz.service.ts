@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import {HttpClient, HttpHeaders, HttpParams} from '@angular/common/http';
+import {HttpClient} from '@angular/common/http';
 import {Router} from '@angular/router';
 
 @Injectable({
@@ -15,7 +15,7 @@ export class QuizService {
   ) { }
 
   startQuiz(playerData) {
-    return this.http.post('http://35.159.16.176:3000/quizzes/', {
+    return this.http.post('http://35.159.16.176:80/quizzes/', {
       playerAge: playerData.age,
       playerPlz: playerData.plz,
       code: playerData.quizcode,
@@ -33,7 +33,7 @@ export class QuizService {
   }
 
   postAnswer(questionId, answer) {
-    this.http.post('http://35.159.16.176:3000/answers/', {
+    this.http.post('http://35.159.16.176:80/answers/', {
       quizId: this.quizId,
       questionId,
       answer,
@@ -48,7 +48,7 @@ export class QuizService {
   }
 
   getResults() {
-    return this.http.get('http://35.159.16.176:3000/answers/' + this.quizId).toPromise();
+    return this.http.get('http://35.159.16.176:80/answers/' + this.quizId).toPromise();
   }
 
   setQuizData(quizData) {

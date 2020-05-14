@@ -1,8 +1,24 @@
 .wrapper {
-  background-color: #ff6767;
+  background: #ffd740;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   height: 100%;
+}
+
+.header, .footer {
+  background-color: transparent;
+  & h1 {
+    font-family: "Apple SD Gothic Neo";
+    font-size: 2rem;
+    margin: auto;
+    padding: 40px;
+  }
+}
+.content {
+  flex: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

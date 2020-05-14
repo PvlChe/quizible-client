@@ -2,10 +2,12 @@
 
 .start-form {
   background-color: #ffd740;
-  width: 400px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   padding: 40px 0;
+  box-shadow: none !important;
+
 }
 
 button {
